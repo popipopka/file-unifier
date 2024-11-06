@@ -1,11 +1,11 @@
 package ru.doczilla.fileunifier.service.impl;
 
 import ru.doczilla.fileunifier.exception.FileParserException;
+import ru.doczilla.fileunifier.model.FileUtil;
 import ru.doczilla.fileunifier.model.RelativePath;
 import ru.doczilla.fileunifier.service.FileParser;
 
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class FileRequireParser implements FileParser<RelativePath> {
         List<RelativePath> results = new ArrayList<>();
 
         try {
-            Matcher matcher = PATTERN.matcher(Files.readString(file.getAbsolute()));
+            Matcher matcher = PATTERN.matcher(FileUtil.read(file.getAbsolute()));
 
             while (matcher.find()) {
                 String result = matcher.group(1);
