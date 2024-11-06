@@ -1,6 +1,7 @@
 package ru.doczilla.fileunifier.service.impl;
 
 import ru.doczilla.fileunifier.exception.FileFinderException;
+import ru.doczilla.fileunifier.exception.FileUnifierException;
 import ru.doczilla.fileunifier.model.RelativePath;
 import ru.doczilla.fileunifier.service.FileUnifier;
 
@@ -28,7 +29,7 @@ public class FileUnifierImpl implements FileUnifier {
             }
 
         } catch (IOException e) {
-            throw new FileFinderException("Error when merging files: " + e.getMessage());
+            throw new FileUnifierException("Error when merging files: " + e.getMessage());
         }
     }
 }
