@@ -1,6 +1,5 @@
 package ru.doczilla.fileunifier.service.impl;
 
-import ru.doczilla.fileunifier.exception.FileFinderException;
 import ru.doczilla.fileunifier.exception.FileUnifierException;
 import ru.doczilla.fileunifier.model.RelativePath;
 import ru.doczilla.fileunifier.service.FileUnifier;
@@ -9,7 +8,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 
-import static ru.doczilla.fileunifier.model.FileUtil.*;
+import static ru.doczilla.fileunifier.util.FileUtil.*;
 
 public class FileUnifierImpl implements FileUnifier {
     @Override

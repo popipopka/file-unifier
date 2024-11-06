@@ -1,4 +1,4 @@
-package ru.doczilla.fileunifier.model;
+package ru.doczilla.fileunifier.util;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

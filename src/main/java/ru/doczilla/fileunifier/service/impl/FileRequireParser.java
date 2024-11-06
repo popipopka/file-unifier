@@ -1,7 +1,7 @@
 package ru.doczilla.fileunifier.service.impl;
 
 import ru.doczilla.fileunifier.exception.FileParserException;
-import ru.doczilla.fileunifier.model.FileUtil;
+import ru.doczilla.fileunifier.util.FileUtil;
 import ru.doczilla.fileunifier.model.RelativePath;
 import ru.doczilla.fileunifier.service.FileParser;
 
